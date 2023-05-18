@@ -41,16 +41,6 @@ with open ('SPRINT_Excel.csv', 'a') as excel:
                 Alu_perc =  np.array (Alu) / np.array(RES) * 100
 
                 # Print results
-                '''
-                print ('\n\n##################################################')
-                print ('Analysis in RED-ML ({} | {} | {})'.format (align, condition, support))
-                print ('Average number of Variants: {} (Std {})'.format(np.round (np.mean(variants), 0), np.round (sem(variants), 3)))
-                print ('Average number of RES: {} (Std {})'.format(np.round (np.mean(RES), 0), np.round (sem(RES), 3)))
-                print ('Average number of RES in REDIportal: {} % (Std {})'.format(np.round (np.mean(REDIportal_perc), 2), np.round (sem(REDIportal_perc), 5)))
-                print ('FDR: {} (Std {})'.format(np.round (np.mean(FDR), 5), np.round (sem(FDR), 5)))
-                print ('Number of RES in Alu: {} % (Std {})'.format(np.round (np.mean(Alu_perc), 2), np.round (sem(Alu_perc), 5)))
-                print ('\n\n##################################################')
-                '''
                 mean_res = np.round(np.mean(RES), 0)
                 sem_res = np.round (sem(RES), 3)
                 mean_fdr = np.round(np.mean(FDR), 5)

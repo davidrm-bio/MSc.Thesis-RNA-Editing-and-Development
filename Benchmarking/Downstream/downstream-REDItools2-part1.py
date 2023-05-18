@@ -105,18 +105,7 @@ for align in aligners:
                 except ZeroDivisionError:
                     alu_percentage = 0
                 
-                '''
-                # Print out results 
-                print ('\n\n##################################################')
-                print ('Analysis in REDItools2 ({} | {} | {} | {})'.format (align, condition, sample, support))
-                print ('Number of Variants: {}'.format(len(data_ID_clean)))
-                print ('Number of RES: {}'.format(len(data_res)))
-                print ('Number of RES in REDIportal: {} ({} %)'.format(len(data_db), db_percentage))
-                print ('Number of G > A: {}'.format(len(data_GA)))
-                print ('FDR: {}'.format(data_fdr))
-                print ('Number of RES in Alu: {} ({} %)'.format(cont, alu_percentage))
-                print ('\n\n##################################################')
-                '''
+
                 # Save data
                 export_data[align][condition][sample][support]['Variants'] = len (data_ID_clean)
                 export_data[align][condition][sample][support]['RES'] = len (data_res)

@@ -79,7 +79,7 @@ for align in aligners:
                 '''
                 # Print out results 
                 print ('\n\n##################################################')
-                print ('Analysis in REDItools2 ({} | {} | {} | {})'.format (align, condition, sample, support))
+                print ('Analysis in BCFtools ({} | {} | {} | {})'.format (align, condition, sample, support))
                 print ('Number of Variants: {}'.format(len(data_ID_clean)))
                 print ('Number of RES: {}'.format(len(data_res)))
                 print ('Number of RES in REDIportal: {} ({} %)'.format(len(data_db), db_percentage))
